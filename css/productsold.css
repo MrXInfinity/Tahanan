@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Kanit&family=Roboto:wght@100&display=swap");
+
+/*=====
+GLOBAL
+=====*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-style: normal;
+}
+
+container {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*:hover {
+  transition: all 0.25s ease-in-out;
+}
+
+/*=====
+NAVBAR
+======*/
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 1%;
+  max-height: 80px;
+  height: 6vw;
+  background: url("../img/welcome.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.logo img {
+  height: 50%;
+  padding: 0 1%;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(1.9vw, 1.9rem);
+}
+
+.logo-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+  text-align: center;
+}
+
+.links {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.links a {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1vw, 1rem);
+  display: inline-flex;
+  height: 4em;
+  padding: 1.5em 2em;
+  align-items: center;
+
+  color: white;
+}
+
+.links a:hover {
+  background: rgba(62, 100, 104, 0.5);
+}
+
+.active-link {
+  background: rgba(78, 125, 129, 0.78);
+}
+
+/*=====
+HEADER
+=====*/
+
+header {
+  height: 14vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-header {
+  font-family: "Kanit", sans-serif;
+  font-size: min(3vw, 3rem);
+  text-align: center;
+  padding-bottom: 0.7%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.4vw, 1.4rem);
+}
+
+form select {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+  font-weight: 1000;
+  text-align: center;
+  width: 10%;
+  margin-left: 1.5%;
+}
+
+option {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+  font-weight: 1000;
+}
+
+option:hover {
+  background: rgba(62, 100, 104, 0.5);
+}
+
+/*======
+PRODUCTS
+=======*/
+
+section-product {
+  grid-template-columns: repeat(3, 30%);
+}
+
+.product-container {
+  height: 26vw;
+}
+
+.product-content {
+  padding: 2% 3%;
+}
+
+.left-part h1 {
+  font-size: min(2vw, 2rem);
+}
+
+.left-part h2 {
+  font-size: min(1.3vw, 1.3rem);
+}
+.right-part {
+  font-size: min(2.5vw, 2.5rem);
+}
+
+/*====
+FOOTER
+====*/
+
+footer {
+  display: flex;
+  width: 100%;
+  color: white;
+  background: rgb(26, 18, 13);
+  padding: 2% 2.5% 0;
+  margin-top: 4%;
+}
+
+footer-section-1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5% 0 0;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sign-up h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.3vw, 1.3rem);
+  font-weight: 300;
+}
+
+.sign-up p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+}
+
+input:nth-child(1) {
+  width: 68.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+input:nth-child(2) {
+  width: 28.5%;
+  background: rgba(129, 186, 190, 1);
+  border-color: none;
+  color: white;
+  border-style: none;
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.1vw, 1.1rem);
+}
+
+input:nth-child(2):hover {
+  background: rgb(80, 188, 196);
+}
+
+.sitemap {
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.sitemap a {
+  text-align: center;
+  padding: 2% 5%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+}
+
+.sitemap a:nth-child(2) {
+  border-left: 0.05em solid rgba(255, 255, 255, 0.6);
+  border-right: 0.05em solid rgba(255, 255, 255, 0.6);
+}
+
+.sitemap a:hover {
+  color: rgb(80, 188, 196);
+}
+
+footer-section-2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22%;
+}
+
+.footer-content h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.2vw, 1.2rem);
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1vw, 1rem);
+  text-align: center;
+}
+
+.logo_socmed {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo img {
+  height: 50%;
+  max-width: 60px;
+  align-items: center;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.footer-logo-text h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(1.5vw, 1.5rem);
+}
+
+.footer-logo-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(0.8vw, 0.8rem);
+  text-align: center;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-links a {
+  width: 13%;
+  height: 80%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.social-media-links a img {
+  height: 100%;
+}
+
+.bottom-side {
+  text-align: end;
+  font-family: "Roboto", sans-serif;
+  font-size: min(0.8vw, 0.8rem);
+  padding: 1% 0;
+}
+
+/*====
+MODAL
+====*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  margin: 5% 10%;
+  background-color: #fefefe;
+  height: 40vw;
+  width: 80%;
+  display: flex;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.modal-content img {
+  height: 100%;
+  width: 75%;
+}
+
+.modal-description {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 88%;
+  padding: 12% 0 0 12%;
+}
+
+.modal-header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.5vw, 2.5rem);
+  text-align: center;
+}
+
+.modal-header h2 {
+  height: 2%;
+  background: rgba(255, 154, 84, 1);
+}
+
+.close {
+  font-size: min(2vw, 2rem);
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 12%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 12%;
+  height: 55%;
+}
+
+.description-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.2vw, 1.2rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-container h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(2vw, 2rem);
+  text-align: center;
+  padding: 2% 10%;
+  background-color: rgba(75, 143, 148, 1);
+  color: white;
+  border-radius: 30px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

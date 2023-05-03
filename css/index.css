@@ -1,0 +1,1136 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Kanit&family=Roboto:wght@100&display=swap");
+
+/*============================================
+                    GLOBAL
+=============================================*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-style: normal;
+}
+
+container {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*:hover {
+  transition: all 0.25s ease-in-out;
+}
+
+/*============================================
+                    NAVBAR                    
+============================================*/
+
+section {
+  background: url("../img/welcome.jpg") no-repeat 40%;
+  background-size: cover;
+  height: 120vw;
+  max-height: 720px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 1%;
+  max-height: 80px;
+  height: 17%;
+  background-color: rgba(125, 186, 190, 1);
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.logo img {
+  height: 45%;
+  max-height: 36px;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(4.7vw, 1.4rem);
+  font-weight: 100;
+}
+
+.logo-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.3vw, 0.7rem);
+  text-align: center;
+}
+
+.links {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.links a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+.links a:hover {
+  background: rgba(62, 100, 104, 0.5);
+}
+
+.links h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1vw, 1rem);
+  display: none;
+  font-weight: normal;
+}
+
+.links img {
+  height: 40%;
+  max-height: 30px;
+}
+
+.active-link {
+  border-bottom: 0.3rem solid rgba(78, 125, 129, 0.78);
+}
+
+/*==================================================
+                    NAVBAR MEDIA                    
+==================================================*/
+
+@media screen and (min-width: 481px) {
+  section {
+    background: url("../img/welcome.jpg") no-repeat top;
+    background-size: cover;
+    height: 60vw;
+  }
+
+  nav {
+    background-color: transparent;
+    height: 6vw;
+  }
+
+  .logo img {
+    height: 50%;
+    padding: 0 1%;
+    max-height: none;
+  }
+
+  .logo-text h1 {
+    font-size: min(1.9vw, 1.42rem);
+  }
+
+  .logo-text h2 {
+    font-size: min(1vw, 0.75rem);
+  }
+
+  .links a {
+    font-size: min(1vw, 0.75rem);
+    height: 4em;
+    width: auto;
+    padding: 1.5em 2em;
+  }
+
+  .links h1 {
+    display: inline;
+  }
+
+  .links img {
+    display: none;
+  }
+
+  .active-link {
+    background: rgba(78, 125, 129, 0.78);
+    border: none;
+  }
+}
+
+/*=============================================
+                    WELCOME                        
+=============================================*/
+
+.welcome-content {
+  height: 83%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-content h1 {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: min(6vw, 1.8rem);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 70%;
+}
+
+.welcome-content a {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  padding: 1em 1.5em;
+  align-items: center;
+  font-size: min(4vw, 1.2rem);
+  color: white;
+  background: rgba(17, 53, 86, 1);
+}
+
+.welcome-content a:hover {
+  background: rgb(24, 74, 121);
+}
+
+/*===================================================
+                    WELCOME MEDIA                       
+===================================================*/
+
+@media screen and (min-width: 481px) {
+  .welcome-content {
+    height: 70%;
+  }
+
+  .welcome-content h1 {
+    font-size: min(2.22vw, 2rem);
+    margin-top: 1.5em;
+  }
+
+  .welcome-content a {
+    font-size: min(1.3vw, 1.169rem);
+    background: rgba(17, 53, 86, 0.78);
+  }
+
+  .welcome-content a:hover {
+    background: rgba(17, 53, 86, 1);
+  }
+}
+
+/*=========================================================
+                    INFORMATION SECTION                    
+=========================================================*/
+
+section-1 {
+  margin-top: 10%;
+  height: 167vw;
+  max-height: 800px;
+  width: 100%;
+  display: flex;
+}
+
+section-1,
+.information-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information-heading h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(4.33vw, 1.3rem);
+}
+
+.information-heading img {
+  width: 65%;
+}
+
+.information-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 95%;
+  align-items: center;
+}
+
+.eachinformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.eachinformation h1 {
+  display: flex;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: min(4vw, 1.2rem);
+  width: 70%;
+  padding: 0.7em;
+  line-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eachinformation img {
+  max-height: 100px;
+  max-width: 100px;
+  height: 44%;
+  width: 35%;
+}
+
+.eachinformation p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(3vw, 0.9rem);
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 900;
+}
+
+/*===============================================================
+                    INFORMATION SECTION MEDIA                   
+===============================================================*/
+
+@media screen and (min-width: 481px) {
+  section-1 {
+    height: 40vw;
+    max-height: 500px;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .information-heading {
+    margin-bottom: 2%;
+  }
+
+  .information-heading h1 {
+    font-size: min(2.5vw, 2.25rem);
+  }
+
+  .information-heading img {
+    width: 90%;
+  }
+
+  .information-content {
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 60%;
+  }
+
+  .eachinformation {
+    width: 30%;
+    height: 100%;
+  }
+
+  .eachinformation h1 {
+    font-size: min(2.1vw, 1.89rem);
+    height: 30%;
+    padding: 0;
+  }
+
+  .eachinformation img {
+    max-height: 110px;
+    max-width: 110px;
+    height: 36.7%;
+    width: 25.5%;
+  }
+
+  .eachinformation p {
+    font-size: min(1.5vw, 1.35rem);
+  }
+}
+
+/*=======================================================
+                    SLIDESHOW SECTION                    
+=======================================================*/
+
+section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  height: 73vw;
+  margin-top: 3%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.slider-heading {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.slider-heading h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(4vw, 1.2rem);
+  height: 20%;
+  padding: 1% 5%;
+  text-align: center;
+}
+
+.slider-heading-content {
+  height: 80%;
+  background-image: linear-gradient(
+    180deg,
+    rgb(73, 70, 70),
+    rgba(73, 70, 70, 1)
+  );
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 2% 0;
+}
+
+.slider-heading-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.83vw, 0.85rem);
+  text-align: center;
+  color: white;
+  width: 65%;
+}
+
+.slider-heading-content a {
+  font-family: "Kanit", sans-serif;
+  font-size: min(2.5vw, 0.75rem);
+  padding: 2% 0;
+  color: white;
+  background: rgba(129, 186, 190, 1);
+  width: 30%;
+  text-align: center;
+}
+
+.slider-heading-content a:hover {
+  background: rgb(80, 188, 196);
+}
+
+.sliding-container-button {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(26, 18, 13, 1) 0%,
+    rgba(73, 70, 70, 1) 100%
+  );
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 69%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.slide:nth-child(1) {
+  left: 15.5%;
+}
+
+.slide:nth-child(2) {
+  left: 84.5%;
+}
+
+.slide:nth-child(3) {
+  left: 153.5%;
+}
+
+.slide:nth-child(4) {
+  left: 222.5%;
+}
+
+.slide:nth-child(5) {
+  left: 291.5%;
+}
+
+.slide-desc {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.67vw, 0.5rem);
+  background: rgba(255, 255, 255, 0);
+}
+
+.slide-desc h1 {
+  padding: 1em 1.5em;
+  border: rgba(255, 255, 255, 0) 0.1em solid;
+  color: rgba(255, 255, 255, 0);
+}
+
+.slide-desc:hover {
+  display: inline-flex;
+  background: rgba(17, 53, 86, 0.65);
+}
+
+.slide-desc:hover h1 {
+  padding: 1em 1.5em;
+  border: white 0.1em solid;
+  color: white;
+}
+
+.slide-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn-container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container:hover {
+  background: rgba(18, 44, 70, 0.11);
+}
+
+.left-button {
+  left: 0;
+}
+
+.right-button {
+  right: 0;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  background: rgba(18, 44, 70, 0.11);
+  width: 15.9vw;
+  max-width: 76px;
+}
+
+.btn-container img {
+  height: 8.4vw;
+  width: 8.4vw;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/*=============================================================
+                    SLIDESHOW SECTION MEDIA                   
+=============================================================*/
+
+@media screen and (min-width: 481px) {
+  section-2 {
+    max-height: 370px;
+    height: 24vw;
+    margin-top: 6.5%;
+    flex-direction: row;
+  }
+
+  .slider-heading {
+    width: 40%;
+    height: auto;
+  }
+
+  .slider-heading h1 {
+    font-size: min(2.2vw, 1.98rem);
+    height: 15%;
+    text-align: left;
+  }
+
+  .slider-heading-content {
+    height: 85%;
+    background-image: linear-gradient(
+      180deg,
+      rgb(73, 70, 70),
+      rgba(26, 18, 13)
+    );
+    align-items: baseline;
+    justify-content: normal;
+  }
+
+  .slider-heading-content p {
+    text-align: left;
+    font-size: min(1.3vw, 0.975rem);
+    padding: 7% 5%;
+  }
+
+  .slider-heading-content a {
+    font-size: min(1.2vw, 0.9rem);
+    width: 60%;
+    margin-left: 5%;
+  }
+
+  .sliding-container-button {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(
+      0deg,
+      rgba(26, 18, 13, 1) 0%,
+      rgba(73, 70, 70, 1) 85%,
+      rgba(255, 255, 255, 1) 85%
+    );
+  }
+
+  .slide-desc {
+    font-size: 0.9vw;
+    font-size: 0.9rem;
+    font-size: min(1vw, 0.9rem);
+  }
+
+  .prevBtn,
+  .nextBtn {
+    width: 6vw;
+    width: 9.3vw;
+    max-width: 240px;
+  }
+
+  .btn-container img {
+    height: 4.17vw;
+    width: 4.17vw;
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+/*=============================================
+                    FOOTER                                     
+=============================================*/
+
+footer {
+  display: flex;
+  height: 35vw;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  background: rgb(26, 18, 13);
+  flex-direction: column;
+  padding: 5% 2.5% 0;
+}
+
+footer-section-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+}
+
+.signup-header {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.sign-up h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(2vw, 0.6rem);
+  font-weight: 300;
+}
+
+.sign-up p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.835vw, 0.55rem);
+}
+
+form {
+  width: 58%;
+  display: flex;
+  margin-top: 2%;
+}
+
+input:nth-child(1) {
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+}
+
+input:nth-child(2) {
+  width: 30%;
+  background: rgba(129, 186, 190, 1);
+  color: white;
+  border-style: none;
+  font-family: "Kanit", sans-serif;
+  font-size: min(2.5vw, 0.75rem);
+}
+
+input:nth-child(2):hover {
+  background: rgb(80, 188, 196);
+}
+
+.sitemap {
+  display: flex;
+  width: 13%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.sitemap a {
+  text-align: center;
+  padding: 2% 5%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: min(2vw, 0.6rem);
+}
+
+.sitemap a:nth-child(2) {
+  border-top: 0.05em solid rgba(255, 255, 255, 0.6);
+  border-bottom: 0.05em solid rgba(255, 255, 255, 0.6);
+}
+
+.sitemap a:hover {
+  color: rgb(80, 188, 196);
+}
+
+footer-section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-side {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18%;
+  flex-wrap: wrap;
+}
+
+.footer-content h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1.83vw, 0.55rem);
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.67vw, 0.5rem);
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.logo_socmed {
+  width: 40%;
+  display: flex;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.footer-logo img {
+  height: 50%;
+  max-width: 60px;
+  align-items: center;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.footer-logo-text h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(2vw, 0.6rem);
+}
+
+.footer-logo-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.35vw, 0.4rem);
+  text-align: center;
+}
+
+.social-media-links {
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+}
+
+.bottom-side {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.67vw, 0.5rem);
+  padding: 1% 0;
+}
+
+/*==================================================
+                    FOOTER MEDIA                      
+==================================================*/
+
+@media screen and (min-width: 481px) {
+  footer {
+    height: auto;
+    flex-direction: row;
+    justify-content: baseline;
+  }
+
+  footer-section-1 {
+    width: 30%;
+    flex-direction: column;
+    padding: 0 2.5% 0 0;
+    justify-content: baseline;
+  }
+
+  .sign-up {
+    justify-content: baseline;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .signup-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sign-up h1 {
+    font-size: min(1.3vw, 1.17rem);
+  }
+
+  .sign-up p {
+    font-size: min(1vw, 0.9rem);
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input:nth-child(1) {
+    width: 68.5%;
+  }
+
+  input:nth-child(2) {
+    width: 28.5%;
+    font-size: min(1.1vw, 1rem);
+  }
+
+  .sitemap {
+    margin-top: 3%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .sitemap a {
+    font-size: min(1vw, 0.9rem);
+  }
+
+  .sitemap a:nth-child(2) {
+    border-left: 0.05em solid rgba(255, 255, 255, 0.6);
+    border-right: 0.05em solid rgba(255, 255, 255, 0.6);
+    border-top: none;
+    border-bottom: none;
+  }
+
+  footer-section-2 {
+    width: 70%;
+  }
+
+  .top-side {
+    margin: 0;
+  }
+
+  .footer-content {
+    width: 22%;
+  }
+
+  .footer-content h1 {
+    font-size: min(1.2vw, 1.077rem);
+  }
+
+  .footer-content p {
+    font-size: min(1vw, 0.9rem);
+    width: auto;
+  }
+
+  .logo_socmed {
+    width: 25%;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: auto;
+  }
+
+  .footer-logo-text h1 {
+    font-size: min(1.5vw, 1.35rem);
+  }
+
+  .footer-logo-text h2 {
+    font-size: min(0.8vw, 0.72rem);
+  }
+
+  .social-media-links {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .social-media-links a {
+    width: 13%;
+    height: 100%;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .bottom-side {
+    text-align: end;
+    font-size: min(0.8vw, 0.72rem);
+  }
+}
+
+/*===========================================
+                    MODAL                    
+===========================================*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+.modal-content {
+  position: fixed;
+  margin: 15% 10%;
+  background-color: #fefefe;
+  height: 85vw;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.modal-content img {
+  height: 58%;
+  width: 100%;
+}
+
+.modal-description {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  height: 29%;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 88%;
+  padding: 3% 0 0 12%;
+}
+
+.modal-header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(3.5vw, 1.05rem);
+  text-align: center;
+}
+
+.modal-header h2 {
+  height: 5%;
+  background: rgba(255, 154, 84, 1);
+}
+
+.close {
+  font-size: min(5.4vw, 1.6rem);
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 12%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12%;
+  height: 46%;
+}
+
+.description-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.17vw, 0.65rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-container h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(3vw, 0.9rem);
+  text-align: center;
+  padding: 1.5% 7%;
+  background-color: rgba(75, 143, 148, 1);
+  color: white;
+  border-radius: 30px;
+}
+
+/*=================================================
+                    MODAL MEDIA                      
+=================================================*/
+
+@media screen and (min-width: 481px) {
+  .modal-content {
+    margin: 5% 10%;
+    height: 40vw;
+    flex-direction: row;
+  }
+
+  .modal-content img {
+    height: 100%;
+    width: 75%;
+  }
+
+  .modal-description {
+    height: 100%;
+    width: 25%;
+  }
+
+  .modal-header {
+    padding: 12% 0 0 12%;
+  }
+
+  .modal-header h1 {
+    font-size: min(2.5vw, 2.5rem);
+  }
+
+  .modal-header h2 {
+    height: 2%;
+  }
+
+  .close {
+    font-size: min(2vw, 2rem);
+  }
+
+  .description-container {
+    padding: 2% 12%;
+    height: 55%;
+  }
+
+  .description-container p {
+    font-size: min(1.2vw, 1.2rem);
+  }
+
+  .price-container h3 {
+    font-size: min(2vw, 2rem);
+    padding: 2% 10%;
+  }
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Kanit&family=Roboto:wght@100&display=swap");
+
+/*=====
+GLOBAL
+=====*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*:hover {
+  transition: all 0.25s ease-in-out;
+}
+
+/*=================================================
+                    MAIN CONTENT                    
+=================================================*/
+
+main-content {
+  height: 160vw;
+  display: flex;
+  flex-direction: column;
+}
+
+origin-section {
+  height: 24.74%;
+  max-height: 190px;
+  background: url("../img/welcome.jpg") no-repeat top;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+/*=======================================================
+                    MAIN CONTENT MEDIA                   
+=======================================================*/
+@media screen and (min-width: 481px) {
+  main-content {
+    height: 75vw;
+  }
+
+  origin-section {
+    height: 18.8vw;
+    max-height: 270px;
+  }
+}
+
+/*============================================
+                    NAVBAR                    
+============================================*/
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 1%;
+  max-height: 80px;
+  height: 42.4%;
+  background-color: rgba(125, 186, 190, 1);
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.logo img {
+  height: 45%;
+  max-height: 36px;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.logo-text h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(4.7vw, 1.4rem);
+  font-weight: 100;
+}
+
+.logo-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.3vw, 0.7rem);
+  text-align: center;
+}
+
+.links {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.links a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+
+.links a:hover {
+  background: rgba(62, 100, 104, 0.5);
+}
+
+.links h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(1vw, 1rem);
+  display: none;
+  font-weight: normal;
+}
+
+.links img {
+  height: 40%;
+  max-height: 30px;
+}
+
+.active-link {
+  border-bottom: 0.3rem solid rgba(78, 125, 129, 0.78);
+}
+
+/*==================================================
+                    NAVBAR MEDIA                    
+==================================================*/
+
+@media screen and (min-width: 481px) {
+  nav {
+    background: url("../img/welcome.jpg") no-repeat top;
+    background-size: cover;
+    height: 6vw;
+  }
+
+  .logo img {
+    height: 50%;
+    padding: 0 1%;
+    max-height: none;
+  }
+
+  .logo-text h1 {
+    font-size: min(1.9vw, 1.42rem);
+  }
+
+  .logo-text h2 {
+    font-size: min(1vw, 0.75rem);
+  }
+
+  .links a {
+    font-size: min(1vw, 0.75rem);
+    height: 4em;
+    width: auto;
+    padding: 1.5em 2em;
+  }
+
+  .links h1 {
+    display: inline;
+  }
+
+  .links img {
+    display: none;
+  }
+
+  .active-link {
+    background: rgba(78, 125, 129, 0.78);
+    border: none;
+  }
+}
+
+/*===================================================
+                    ORIGIN CONTENT                    
+===================================================*/
+content-bg {
+  background: rgba(96, 80, 69, 0.89);
+  height: 57.9%;
+  width: 100%;
+  max-height: 110px;
+}
+
+origin-content-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+origin-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -20%;
+  width: inherit;
+}
+
+origin-content h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: min(5vw, 1.5rem);
+  color: white;
+  font-weight: 100;
+  margin-bottom: 2%;
+}
+
+origin-content h1 span {
+  font-family: "Cabin Sketch", cursive;
+  line-height: 1.5;
+}
+
+origin-content img {
+  height: 40%;
+  width: 65%;
+  margin-bottom: 2%;
+}
+
+origin-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: min(2.7vw, 0.8rem);
+  width: 65%;
+  font-weight: 1000;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+origin-content p span {
+  font-family: "Cabin Sketch", cursive;
+  font-size: min(3vw, 3rem);
+  font-weight: 200;
+}
+
+/*=========================================================
+                    ORIGIN CONTENT MEDIA                    
+=========================================================*/
+@media screen and (min-width: 481px) {
+  content-bg {
+    height: 70.371%;
+  }
+
+  origin-content {
+    margin: -11%;
+  }
+
+  origin-content h1 {
+    font-size: min(3vw, 3rem);
+  }
+
+  origin-content p {
+    font-size: min(1.3vw, 1.3rem);
+    width: 55%;
+  }
+
+  origin-content p span {
+    font-size: min(3vw, 3rem);
+  }
+}
+
+/*====================================================
+                    CONTACT SECTION                    
+====================================================*/
+contact-info {
+  display: flex;
+  height: 90vw;
+  flex-direction: column;
+  background-color: rgba(129, 186, 190, 1);
+  color: white;
+  padding-bottom: 1%;
+}
+
+.contact-header {
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.1vw;
+  font-size: 1.1rem;
+  font-size: min(1.1vw, 1.1rem);
+}
+
+.contact-us-info {
+  display: flex;
+  height: 80%;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.message-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  justify-content: space-around;
+}
+
+.message-info label,
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.5vw, 1.5rem);
+  font-weight: 1000;
+}
+
+.message-info div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.message-info div:nth-child(3) {
+  height: 40%;
+}
+
+.message-info input {
+  width: 70%;
+  margin-right: 20%;
+  height: 100%;
+}
+
+.message-info label {
+  width: 40%;
+  padding-left: 10%;
+}
+
+.company-info {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts,
+.schedule,
+.address,
+.link {
+  display: flex;
+  height: 20%;
+  width: 45%;
+  align-items: center;
+}
+
+.company-info div h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: min(1.1vw, 1.1rem);
+}
+
+.company-info div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-list {
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.link-list a {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.link-list img {
+  height: 90% !important;
+  width: 80% !important;
+}
+
+.company-info img {
+  width: 20%;
+  height: 50%;
+}
+
+.contact-bg {
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  height: inherit;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact-bg img {
+  height: 90%;
+}
