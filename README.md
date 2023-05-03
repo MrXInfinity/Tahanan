@@ -7,13 +7,13 @@ A simple website using HTML, CSS and Javascript
 Clone the project
 
 ```bash
-  git clone https://github.com/MrXInfinity/Tahanan
+  git clone https://github.com/MrXInfinity/Tahanan.git
 ```
 
 Go to the public directory
 
 ```bash
-  cd public
+  cd Tahanan
 ```
 
 Install Live Server extension on Visual Studio Code and click `Go Live`
