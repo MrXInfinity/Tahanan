@@ -7,7 +7,7 @@ A simple website using HTML, CSS and Javascript
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/MrXInfinity/Tahanan
 ```
 
 Go to the public directory
